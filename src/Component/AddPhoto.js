@@ -1,5 +1,4 @@
 import React from 'react';
-import serializeForm from 'form-serialize'
 
 
 class AddPhoto extends React.Component
