@@ -5,8 +5,11 @@ import { Link } from 'react-router-dom';
 
 
 const PhotoWall= (props)=>{
+    console.log(props)
     return(<> <Link className='addIcon' to='/AddPhoto'>+</Link>
-    <div className='photoGrid'>{props.posts.map((post,index)=><Photo post={post} key={index} onRemovePhoto={props.onRemovePhoto}/>)}</div></>)
+    <div className='photoGrid'> {props.posts.sort(function(x, y){return y.id - x.id;}).map((post, i) => {
+ return <Photo key={i} post={post} i={i} {...props}/>
+ })}</div></>)
 }
 
 PhotoWall.prototype={
