@@ -1,15 +1,18 @@
 import * as firebase from 'firebase'
 
-var firebaseConfig = {
-    apiKey: "AIzaSyALBa-KtRu0_w9Iz1NxrZLp--aR_8TD7ck",
-    authDomain: "photo-wall-18965.firebaseapp.com",
-    databaseURL: "https://photo-wall-18965.firebaseio.com",
-    projectId: "photo-wall-18965",
-    storageBucket: "photo-wall-18965.appspot.com",
-    messagingSenderId: "754659097351",
-    appId: "1:754659097351:web:09614236a688727af863a2",
-    measurementId: "G-3JJTN39QG3"
-  };
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDT5BW7wsqtT8rOa9FvfXT2ECyBPRe2bF4",
+  authDomain: "photo-wall-c4461.firebaseapp.com",
+  databaseURL: "https://photo-wall-c4461.firebaseio.com",
+  projectId: "photo-wall-c4461",
+  storageBucket: "photo-wall-c4461.appspot.com",
+  messagingSenderId: "696363900683",
+  appId: "1:696363900683:web:17f8da6605dca7e1b60c0e",
+  measurementId: "G-Q6ZKZW2T4V"
+};
   firebase.initializeApp(firebaseConfig)
  const database = firebase.database()
+ export const auth = firebase.auth();
+
  export {database}
