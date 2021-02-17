@@ -8,8 +8,8 @@ function mapStateToProps(state, ownProps) {
  posts: state
  }
 }
-function mapDispachToProps(dispatch) {
+function mapDispatchToProps(dispatch) {
  return bindActionCreators(actionCreators, dispatch);
 }
-const App = withRouter(connect(mapStateToProps, mapDispachToProps)(Main));
+const App = withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
 export default App;
